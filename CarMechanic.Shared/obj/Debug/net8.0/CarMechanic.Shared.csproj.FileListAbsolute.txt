@@ -1,0 +1,12 @@
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.AssemblyInfoInputs.cache
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.AssemblyInfo.cs
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.csproj.CoreCompileInputs.cache
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.sourcelink.json
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\bin\Debug\net8.0\CarMechanic.Shared.deps.json
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\bin\Debug\net8.0\CarMechanic.Shared.dll
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\bin\Debug\net8.0\CarMechanic.Shared.pdb
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.dll
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\refint\CarMechanic.Shared.dll
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\CarMechanic.Shared.pdb
+D:\develpoment\c#Beadando\CarMechanic\CarMechanic.Shared\obj\Debug\net8.0\ref\CarMechanic.Shared.dll

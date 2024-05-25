@@ -58,7 +58,7 @@ public class WorkController : ControllerBase
         return Ok(work);
     }
 
-    [HttpGet]
+    [HttpGet("GetAllWorks")]
     public async Task<ActionResult<List<Work>>> GetAllWorks()
     {
         return Ok(await _workService.GetAllWorks());
@@ -84,7 +84,7 @@ public class WorkController : ControllerBase
         return Ok();
     }
 
-    [HttpGet]
+    [HttpGet("EstimateWorkHours")]
     public async Task<IActionResult> EstimateWorkHours([FromQuery] string category, [FromQuery] int carAge, [FromQuery] int severity)
     {
         try
