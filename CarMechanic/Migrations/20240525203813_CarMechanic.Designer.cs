@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarMechanic.Migrations
 {
     [DbContext(typeof(CarMechanicContext))]
-    [Migration("20240525192809_CarMechanic")]
+    [Migration("20240525203813_CarMechanic")]
     partial class CarMechanic
     {
         /// <inheritdoc />

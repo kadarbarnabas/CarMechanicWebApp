@@ -3,11 +3,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarMechanic;
 
-public class WorkEstimationService
+public class WorkEstimationService : IWorkEstimationService
 {
+    public Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity)
+    {
+        return Task.Run(() => EstimateWorkHours(category, carAge, severity));
+    }
+
+
     public int EstimateWorkHours(string category, int carAge, int severity)
     {
-        // Kategória alapján meghatározott munkaóra
         int baseHours;
         switch (category)
         {

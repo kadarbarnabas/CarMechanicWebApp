@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using CarMechanic.Shared;
 using Microsoft.EntityFrameworkCore;
 
@@ -45,13 +46,7 @@ public class WorkService : IWorkService
     {
         return await _context.Works.ToListAsync();
     }
-
-    public async Task<int> CalculateWorkEstimation(string category, int carAge, int severity)
-    {
-        int estimation = _workEstimationService.EstimateWorkHours(category, carAge, severity);
-        return await Task.FromResult(estimation);
-    }
-
+    
     public async Task UpdateWork(Work newWork)
     {
         var work = await GetWork(newWork.MunkaId);
@@ -66,5 +61,10 @@ public class WorkService : IWorkService
         await _context.SaveChangesAsync();
     }
 
+    public async Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity)
+    {
+        var estimation = await _workEstimationService.EstimateWorkHoursAsync(category, carAge, severity);
+        return estimation;
+    }
 
 }

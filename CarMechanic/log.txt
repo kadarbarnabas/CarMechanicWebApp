@@ -56,3 +56,51 @@ CREATE TABLE "Works" (
 2024-05-25 21:29:09.299 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
 VALUES ('20240525192809_CarMechanic', '8.0.3');
+2024-05-25 21:31:05.191 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-05-25 21:31:05.266 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 21:31:05.268 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 21:31:05.268 +02:00 [INF] Hosting environment: Development
+2024-05-25 21:31:05.268 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 21:31:05.418 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 21:31:05.483 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 66.4222ms
+2024-05-25 21:31:05.693 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 21:31:05.706 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9634ms
+2024-05-25 21:31:11.363 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 21:31:11.366 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 2.7284ms
+2024-05-25 21:31:11.432 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 21:31:11.433 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.7749ms
+2024-05-25 22:38:25.054 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-05-25 22:38:25.111 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2024-05-25 22:38:25.117 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 22:38:25.118 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-25 22:38:25.126 +02:00 [INF] Applying migration '20240525203813_CarMechanic'.
+2024-05-25 22:38:25.136 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Ugyfelszam" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "Nev" TEXT NOT NULL,
+    "Lakcim" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2024-05-25 22:38:25.136 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Works" (
+    "MunkaId" TEXT NOT NULL CONSTRAINT "PK_Works" PRIMARY KEY,
+    "Ugyfelszam" TEXT NOT NULL,
+    "Rendszam" TEXT NOT NULL,
+    "GyartasiEv" INTEGER NOT NULL,
+    "Kategoria" TEXT NOT NULL,
+    "HibakLeirasa" TEXT NOT NULL,
+    "HibaSulyossag" INTEGER NOT NULL,
+    "Allapot" TEXT NOT NULL
+);
+2024-05-25 22:38:25.137 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240525203813_CarMechanic', '8.0.3');

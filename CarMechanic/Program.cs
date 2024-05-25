@@ -27,6 +27,7 @@ builder.Services.AddSingleton<ICustomerService, CustomerService>();
 builder.Services.AddSingleton<WorkEstimationService>();
 builder.Services.AddSingleton<IWorkService, WorkService>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
