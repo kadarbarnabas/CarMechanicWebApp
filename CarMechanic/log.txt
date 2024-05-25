@@ -181,3 +181,11 @@ SELECT "MigrationId", "ProductVersion"
 FROM "__EFMigrationsHistory"
 ORDER BY "MigrationId";
 2024-05-25 22:57:50.380 +02:00 [INF] No migrations were applied. The database is already up to date.
+2024-05-25 23:01:10.382 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 23:01:10.393 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 23:01:10.394 +02:00 [INF] Hosting environment: Development
+2024-05-25 23:01:10.394 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 23:01:10.500 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 23:01:10.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 87.7535ms
+2024-05-25 23:01:10.715 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 23:01:10.782 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.2817ms
