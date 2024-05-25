@@ -1,0 +1,191 @@
+2024-05-25 20:20:02.084 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-05-25 20:20:02.160 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 20:20:02.162 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 20:20:02.163 +02:00 [INF] Hosting environment: Development
+2024-05-25 20:20:02.163 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 20:20:02.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger - null null
+2024-05-25 20:20:02.303 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger - 301 0 null 28.2066ms
+2024-05-25 20:20:02.309 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 20:20:02.356 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 46.8377ms
+2024-05-25 20:20:02.371 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui.css - null null
+2024-05-25 20:20:02.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui-bundle.js - null null
+2024-05-25 20:20:02.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui-standalone-preset.js - null null
+2024-05-25 20:20:02.411 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-05-25 20:20:02.411 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-05-25 20:20:02.411 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-05-25 20:20:02.413 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 38.9207ms
+2024-05-25 20:20:02.413 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui.css - 200 143943 text/css 42.1467ms
+2024-05-25 20:20:02.413 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 38.922ms
+2024-05-25 20:20:02.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 20:20:02.584 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/favicon-32x32.png - null null
+2024-05-25 20:20:02.584 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-05-25 20:20:02.584 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/favicon-32x32.png - 200 628 image/png 0.7874ms
+2024-05-25 20:20:02.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3852ms
+2024-05-25 21:29:09.216 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-05-25 21:29:09.272 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2024-05-25 21:29:09.278 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 21:29:09.279 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-25 21:29:09.288 +02:00 [INF] Applying migration '20240525192809_CarMechanic'.
+2024-05-25 21:29:09.298 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Ugyfelszam" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "Nev" TEXT NOT NULL,
+    "Lakcim" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2024-05-25 21:29:09.299 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Works" (
+    "MunkaId" TEXT NOT NULL CONSTRAINT "PK_Works" PRIMARY KEY,
+    "Ugyfelszam" TEXT NOT NULL,
+    "Rendszam" TEXT NOT NULL,
+    "GyartasiEv" INTEGER NOT NULL,
+    "Kategoria" TEXT NOT NULL,
+    "HibakLeirasa" TEXT NOT NULL,
+    "HibaSulyossag" INTEGER NOT NULL,
+    "Allapot" TEXT NOT NULL
+);
+2024-05-25 21:29:09.299 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240525192809_CarMechanic', '8.0.3');
+2024-05-25 21:31:05.191 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-05-25 21:31:05.266 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 21:31:05.268 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 21:31:05.268 +02:00 [INF] Hosting environment: Development
+2024-05-25 21:31:05.268 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 21:31:05.418 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 21:31:05.483 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 66.4222ms
+2024-05-25 21:31:05.693 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 21:31:05.706 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9634ms
+2024-05-25 21:31:11.363 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 21:31:11.366 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 2.7284ms
+2024-05-25 21:31:11.432 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 21:31:11.433 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.7749ms
+2024-05-25 22:38:25.054 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-05-25 22:38:25.111 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2024-05-25 22:38:25.117 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 22:38:25.118 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-25 22:38:25.126 +02:00 [INF] Applying migration '20240525203813_CarMechanic'.
+2024-05-25 22:38:25.136 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Ugyfelszam" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "Nev" TEXT NOT NULL,
+    "Lakcim" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2024-05-25 22:38:25.136 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Works" (
+    "MunkaId" TEXT NOT NULL CONSTRAINT "PK_Works" PRIMARY KEY,
+    "Ugyfelszam" TEXT NOT NULL,
+    "Rendszam" TEXT NOT NULL,
+    "GyartasiEv" INTEGER NOT NULL,
+    "Kategoria" TEXT NOT NULL,
+    "HibakLeirasa" TEXT NOT NULL,
+    "HibaSulyossag" INTEGER NOT NULL,
+    "Allapot" TEXT NOT NULL
+);
+2024-05-25 22:38:25.137 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240525203813_CarMechanic', '8.0.3');
+2024-05-25 22:47:22.948 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 22:47:22.960 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 22:47:22.960 +02:00 [INF] Hosting environment: Development
+2024-05-25 22:47:22.961 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 22:47:23.071 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 22:47:23.156 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 85.4109ms
+2024-05-25 22:47:23.284 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 22:47:23.330 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET Work" for actions - CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic),CarMechanic.Controllers.WorkController.EstimateWorkHours (CarMechanic). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 22:47:23.360 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 75.8239ms
+2024-05-25 22:50:28.477 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 22:50:28.479 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 1.7693ms
+2024-05-25 22:50:28.621 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 22:50:28.626 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET Work" for actions - CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic),CarMechanic.Controllers.WorkController.EstimateWorkHours (CarMechanic). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 22:50:28.628 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 7.3784ms
+2024-05-25 22:50:39.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 22:50:39.527 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET Work" for actions - CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic),CarMechanic.Controllers.WorkController.EstimateWorkHours (CarMechanic). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 22:50:39.535 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 500 null text/html; charset=utf-8 10.886ms
+2024-05-25 22:50:39.640 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/favicon.ico - null null
+2024-05-25 22:50:39.642 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-25 22:50:39.642 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/favicon.ico - 404 0 null 1.9561ms
+2024-05-25 22:50:39.644 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5018/favicon.ico, Response status code: 404
+2024-05-25 22:51:52.534 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 22:51:52.537 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET Work" for actions - CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic),CarMechanic.Controllers.WorkController.EstimateWorkHours (CarMechanic). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 22:51:52.539 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 500 null text/html; charset=utf-8 4.5539ms
+2024-05-25 22:54:30.349 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 22:54:30.375 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 22:54:30.376 +02:00 [INF] Hosting environment: Development
+2024-05-25 22:54:30.376 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 22:54:30.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 22:54:30.581 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 80.2506ms
+2024-05-25 22:54:30.708 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 22:54:30.780 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.7783ms
+2024-05-25 22:57:50.348 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 22:57:50.363 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 22:57:50.372 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-25 22:57:50.380 +02:00 [INF] No migrations were applied. The database is already up to date.
+2024-05-25 23:01:10.382 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 23:01:10.393 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 23:01:10.394 +02:00 [INF] Hosting environment: Development
+2024-05-25 23:01:10.394 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 23:01:10.500 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 23:01:10.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 87.7535ms
+2024-05-25 23:01:10.715 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 23:01:10.782 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.2817ms
