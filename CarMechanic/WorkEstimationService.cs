@@ -1,10 +1,11 @@
-using System.Threading.Tasks;
+using CarMechanic.Shared;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarMechanic;
 
 public class WorkEstimationService
 {
-    public int EstimateWorkHoursAsync(string category, int carAge, int severity)
+    public int EstimateWorkHours(string category, int carAge, int severity)
     {
         // Kategória alapján meghatározott munkaóra
         int baseHours;

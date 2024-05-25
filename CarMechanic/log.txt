@@ -21,3 +21,38 @@
 2024-05-25 20:20:02.584 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2024-05-25 20:20:02.584 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/favicon-32x32.png - 200 628 image/png 0.7874ms
 2024-05-25 20:20:02.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3852ms
+2024-05-25 21:29:09.216 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-05-25 21:29:09.272 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2024-05-25 21:29:09.278 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-25 21:29:09.279 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-25 21:29:09.288 +02:00 [INF] Applying migration '20240525192809_CarMechanic'.
+2024-05-25 21:29:09.298 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Ugyfelszam" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "Nev" TEXT NOT NULL,
+    "Lakcim" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+);
+2024-05-25 21:29:09.299 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Works" (
+    "MunkaId" TEXT NOT NULL CONSTRAINT "PK_Works" PRIMARY KEY,
+    "Ugyfelszam" TEXT NOT NULL,
+    "Rendszam" TEXT NOT NULL,
+    "GyartasiEv" INTEGER NOT NULL,
+    "Kategoria" TEXT NOT NULL,
+    "HibakLeirasa" TEXT NOT NULL,
+    "HibaSulyossag" INTEGER NOT NULL,
+    "Allapot" TEXT NOT NULL
+);
+2024-05-25 21:29:09.299 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20240525192809_CarMechanic', '8.0.3');

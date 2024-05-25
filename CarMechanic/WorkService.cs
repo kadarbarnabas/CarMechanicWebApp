@@ -46,11 +46,10 @@ public class WorkService : IWorkService
         return await _context.Works.ToListAsync();
     }
 
-    public int CalculateWorkEstimation(string category, int carAge, int severity)
+    public async Task<int> CalculateWorkEstimation(string category, int carAge, int severity)
     {
-        int estimation =  _workEstimationService.EstimateWorkHoursAsync(category, carAge, severity);
-
-        return estimation;
+        int estimation = _workEstimationService.EstimateWorkHours(category, carAge, severity);
+        return await Task.FromResult(estimation);
     }
 
     public async Task UpdateWork(Work newWork)
