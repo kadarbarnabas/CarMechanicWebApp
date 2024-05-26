@@ -1,10 +1,10 @@
-@page "/customer/{id:guid}/worklist"
+@page "/works/list"
 @using CarMechanic.Shared
 @using CarMechanic.UI.Services
 @inject IWorkService WorkService
-@inject NavigationManager navigationManager
+@inject ICustomerService CustomerService
 
-<h3>Munkalista</h3>
+<h3>WorkList</h3>
 
 @if (Works is null)
 {
@@ -34,27 +34,19 @@ else
                     <td>@work.HibaSulyossag</td>
                     <td>@work.Allapot</td>
                     <td>10</td>
-                    <td><button @onclick="() => ShowDescription(work.MunkaId)">Részletes Leírás</button></td>
+                    <td><a href="worklist/@work.MunkaId" class="btn btn-primary">Részletes Adatok</a></td>
                 </tr>
             }
         </tbody>
-    </table>
+    </table> 
 }
 
 @code {
-    [Parameter]
-    public Guid Id { get; set; }
-
     private IEnumerable<Work>? Works { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        var allWorks = await WorkService.GetAllWorksAsync();
-        Works = allWorks.Where(w => w.Ugyfelszam == Id.ToString()).ToList();
+        Works = await WorkService.GetAllWorksAsync();
     }
 
-    private void ShowDescription(Guid workId)
-    {
-        navigationManager.NavigateTo($"/worklist/{workId}");
-    }
 }

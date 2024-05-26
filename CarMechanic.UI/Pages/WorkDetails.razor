@@ -1,0 +1,43 @@
+@page "/worklist/{id:guid}"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Components
+@using CarMechanic.UI.Services
+
+@inject IWorkService WorkService
+@inject NavigationManager NavigationManager
+
+@if (Works is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <WorkForm Work="Works" OnValidSubmit="UpdateAsync" ButtonText="Munka Frissítése" />
+    <button class="btn btn-warning" @onclick="DeleteAsync">Törlés</button>
+}
+
+@code {
+    
+    [Parameter]
+    public Guid Id { get; set; }
+    
+    private Work? Works { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Works = await WorkService.GetWorkAsync(Id);
+    }
+
+    private async Task DeleteAsync()
+    {
+
+        await WorkService.DeleteWorkAsync(Works.MunkaId);
+        NavigationManager.NavigateTo($"/customer/{Works.Ugyfelszam}/worklist");
+    }
+
+    private async Task UpdateAsync()
+    {
+        await WorkService.UpdateWorkAsync(Works.MunkaId, Works);
+        NavigationManager.NavigateTo($"/customer/{Works.Ugyfelszam}/worklist");
+    }
+}
