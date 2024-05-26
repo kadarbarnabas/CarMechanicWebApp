@@ -32,7 +32,7 @@ else
                     <td>@work.Kategoria</td>
                     <td>@work.HibaSulyossag</td>
                     <td>@work.Allapot</td>
-                    <td>@WorkService.EstimateWorkHoursAsync(work.Kategoria, work.GyartasiEv, work.HibaSulyossag)</td>
+                    <td>10</td>
                     <td><button @onclick="() => ShowDescription(work)">Leírás</button></td>
                 </tr>
             }
@@ -49,7 +49,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var allWorks = await WorkService.GetAllWorksAsync();
-        Works = allWorks.Where(w => w.Ugyfelszam == Id).ToList();
+        Works = allWorks.Where(w => w.Ugyfelszam == Id.ToString()).ToList();
     }
 
     private void ShowDescription(Work work)

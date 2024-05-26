@@ -9,6 +9,4 @@ public interface IWorkService
     Task<Work> GetWork(Guid id);
     Task<List<Work>> GetAllWorks();
     Task UpdateWork(Work work);
-
-    Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity);
 }

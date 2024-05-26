@@ -7,42 +7,36 @@ namespace CarMechanic.UI.Services
     public class WorkService : IWorkService
     {
         private readonly HttpClient _httpClient;
-        private readonly WorkEstimationService _workEstimationService;
         
-        public WorkService(HttpClient httpClient, WorkEstimationService workEstimationService)
+        public WorkService(HttpClient httpClient)
         {
-            _httpClient = httpClient;
-            _workEstimationService = workEstimationService;
+            _httpClient = httpClient;;
         }
 
         public async Task CreateWorkAsync(Work work)
         {
-            await _httpClient.PostAsJsonAsync("/Works", work);
+            await _httpClient.PostAsJsonAsync("/Work", work);
         }
 
         public async Task DeleteWorkAsync(Guid id)
         {
-            await _httpClient.DeleteAsync($"/Works/{id}");
+            await _httpClient.DeleteAsync($"/Work/{id}");
         }
 
         public async Task<Work> GetWorkAsync(Guid id)
         {
-            return await _httpClient.GetFromJsonAsync<Work>($"Works/{id}");
+            return await _httpClient.GetFromJsonAsync<Work>($"Work/{id}");
         }
 
         public async Task<IEnumerable<Work>> GetAllWorksAsync()
         {
-            return await _httpClient.GetFromJsonAsync<IEnumerable<Work>>("/Works");
+            return await _httpClient.GetFromJsonAsync<IEnumerable<Work>>("/Work");
         }
 
         public async Task UpdateWorkAsync(Guid id, Work work)
         {
-            await _httpClient.PutAsJsonAsync($"/Works/{id}", work);
+            await _httpClient.PutAsJsonAsync($"/Work/{id}", work);
         }
-
-        public async Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity)
-        {
-            return await Task.Run(() => _workEstimationService.EstimateWorkHours(category, carAge, severity));
-        }
+        
     }
 }

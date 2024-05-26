@@ -4,7 +4,7 @@
 
     <div class="mb-3">
         <label class="form-label">Customer Id</label>
-        <InputNumber @bind-Value="Work.Ugyfelszam" class="form-control"/>
+        <InputText @bind-Value="@Work.Ugyfelszam" class="form-control"/>
         <ValidationMessage For="() => Work.Ugyfelszam" />
     </div>
     <div class="mb-3">
@@ -41,8 +41,9 @@
     <div class="mb-3">
         <label class="form-label">Status</label>
         <InputSelect @bind-Value="Work.Allapot" class="form-control">
-            <option value="Felvett">Felvett</option>
-            <option value="ElvégzésAlatt">Elvégzés alatt</option>
+            <option value="">Select a Status</option>
+            <option value="Felvett Munka">Felvett</option>
+            <option value="Elvégzés alatt">Elvégzés alatt</option>
             <option value="Befejezett">Befejezett</option>
         </InputSelect>
         <ValidationMessage For="() => Work.Allapot" />

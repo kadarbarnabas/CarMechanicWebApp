@@ -1,0 +1,38 @@
+@page "/customer/{id:guid}/addwork"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Components
+@using CarMechanic.UI.Services
+@inject ICustomerService CustomerService
+@inject IWorkService WorkService
+@inject NavigationManager NavigationManager
+
+<h3>Új Munka Hozzáadása</h3>
+
+@if (Customer is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <WorkForm Work="newWork" OnValidSubmit="CreateWorkAsync" ButtonText="Munka Hozzáadása" />
+}
+
+@code {
+    [Parameter]
+    public Guid Id { get; set; }
+    
+    private Customer? Customer { get; set; }
+    private Work newWork = new Work();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Customer = await CustomerService.GetCustomerAsync(Id);
+        newWork.Ugyfelszam = Id.ToString(); // Konvertáljuk a Guid-ot string-é
+    }
+
+    private async Task CreateWorkAsync()
+    {
+        await WorkService.CreateWorkAsync(newWork);
+        NavigationManager.NavigateTo($"/customer/{newWork.Ugyfelszam}/worklist");
+    }
+}

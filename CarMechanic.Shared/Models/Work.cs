@@ -11,7 +11,7 @@ namespace CarMechanic.Shared
         public Guid MunkaId { get; set; }
 
         [Required]
-        public Guid Ugyfelszam { get; set; }
+        public string Ugyfelszam { get; set; }
 
         [Required]
         [RegularExpression(@"^[A-Z]{3}-\d{3}$")]

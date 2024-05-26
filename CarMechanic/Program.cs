@@ -21,11 +21,11 @@ builder.Services.AddDbContext<CarMechanicContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("SQLite"));
     options.UseLazyLoadingProxies();
-}, ServiceLifetime.Singleton);
+}, ServiceLifetime.Scoped);
 
-builder.Services.AddSingleton<ICustomerService, CustomerService>();
-builder.Services.AddSingleton<WorkEstimationService>();
-builder.Services.AddSingleton<IWorkService, WorkService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();  // Change to Scoped
+builder.Services.AddScoped<IWorkService, WorkService>();  
+
 
 
 var app = builder.Build();

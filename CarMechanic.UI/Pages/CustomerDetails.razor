@@ -6,14 +6,15 @@
 @inject ICustomerService CustomerService
 @inject NavigationManager NavigationManager
 
-@if (Customer is null)
+@if (Customers is null)
 {
     <p>Loading..</p>
 }
 else
 {
     <button @onclick="() => ShowWorkList(Id)">Munkák listázása</button>
-    <CustomerForm Customer="Customer" OnValidSubmit="UpdateAsync" ButtonText="Ügyfél Frissítése" />
+    <button class="btn btn-primary" @onclick="() => AddNewWork(Id)">Új Munka Hozzáadása</button>
+    <CustomerForm Customer="Customers" OnValidSubmit="UpdateAsync" ButtonText="Ügyfél Frissítése" />
     <button class="btn btn-warning" @onclick="DeleteAsync">Törlés</button>
 }
 
@@ -22,11 +23,11 @@ else
     [Parameter]
     public Guid Id { get; set; }
     
-    private Customer? Customer { get; set; }
+    private Customer? Customers { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        Customer = await CustomerService.GetCustomerAsync(Id);
+        Customers = await CustomerService.GetCustomerAsync(Id);
     }
     private void ShowWorkList(Guid customerId)
     {
@@ -41,7 +42,12 @@ else
 
     private async Task UpdateAsync()
     {
-        await CustomerService.UpdateCustomerAsync(Id, Customer);
+        await CustomerService.UpdateCustomerAsync(Id, Customers);
         NavigationManager.NavigateTo("/customer/list");
+    }
+
+    private void AddNewWork(Guid customerId)
+    {
+        NavigationManager.NavigateTo($"/customer/{customerId}/addwork");
     }
 }
