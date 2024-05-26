@@ -189,3 +189,11 @@ ORDER BY "MigrationId";
 2024-05-25 23:01:10.587 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 87.7535ms
 2024-05-25 23:01:10.715 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
 2024-05-25 23:01:10.782 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.2817ms
+2024-05-25 23:08:24.243 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-25 23:08:24.255 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-25 23:08:24.255 +02:00 [INF] Hosting environment: Development
+2024-05-25 23:08:24.255 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-25 23:08:24.357 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-25 23:08:24.439 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 82.5518ms
+2024-05-25 23:08:24.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-25 23:08:24.630 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.8024ms
