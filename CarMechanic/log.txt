@@ -197,3 +197,502 @@ ORDER BY "MigrationId";
 2024-05-25 23:08:24.439 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 82.5518ms
 2024-05-25 23:08:24.571 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
 2024-05-25 23:08:24.630 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.8024ms
+2024-05-26 12:02:36.474 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:02:36.488 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:02:36.488 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:02:36.488 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:02:36.617 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:02:36.699 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 83.4127ms
+2024-05-26 12:02:36.848 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:02:36.915 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.7902ms
+2024-05-26 12:18:22.010 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:18:22.022 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:18:22.023 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:18:22.023 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:18:22.129 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:18:22.199 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 70.1796ms
+2024-05-26 12:18:22.320 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:18:22.380 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.7652ms
+2024-05-26 12:22:37.871 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:22:37.883 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:22:37.883 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:22:37.883 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:22:38.000 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:22:38.079 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 79.7768ms
+2024-05-26 12:22:38.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:22:38.280 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.5237ms
+2024-05-26 12:28:47.528 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:28:47.540 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:28:47.540 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:28:47.540 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:28:47.655 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:28:47.732 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 78.0104ms
+2024-05-26 12:28:47.857 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:28:47.920 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.6857ms
+2024-05-26 12:30:51.300 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5018/Customer - application/json 161
+2024-05-26 12:30:51.306 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:30:51.307 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 12:30:51.308 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic)'
+2024-05-26 12:30:51.321 +02:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(CarMechanic.Shared.Customer) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:30:52.931 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-26 12:30:52.939 +02:00 [INF] Customer retrieved: null
+2024-05-26 12:30:53.026 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 16), @p2='?' (Size = 29), @p3='?' (Size = 14)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Ugyfelszam", "Email", "Lakcim", "Nev")
+VALUES (@p0, @p1, @p2, @p3);
+2024-05-26 12:30:53.032 +02:00 [INF] Customer added
+2024-05-26 12:30:53.035 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-05-26 12:30:53.037 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic) in 1714.0524ms
+2024-05-26 12:30:53.037 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic)'
+2024-05-26 12:30:53.038 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5018/Customer - 200 0 null 1737.9416ms
+2024-05-26 12:31:08.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Customer - null null
+2024-05-26 12:31:08.255 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 12:31:08.258 +02:00 [INF] Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Customer]]] GetAllCustomers() on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:31:08.266 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+2024-05-26 12:31:08.271 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Customer, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-26 12:31:08.274 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic) in 15.7453ms
+2024-05-26 12:31:08.274 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 12:31:08.274 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Customer - 200 null application/json; charset=utf-8 20.8025ms
+2024-05-26 12:31:23.481 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - null null
+2024-05-26 12:31:23.483 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:23.486 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:31:23.489 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"Kadar Barnabas","Lakcim":"Debrecen Vigkedvu Mihaly utca","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:31:23.490 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarMechanic.Shared.Customer'.
+2024-05-26 12:31:23.490 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 4.537ms
+2024-05-26 12:31:23.490 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:23.491 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 200 null application/json; charset=utf-8 9.104ms
+2024-05-26 12:31:27.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - null null
+2024-05-26 12:31:27.566 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:27.566 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:31:27.567 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"Kadar Barnabas","Lakcim":"Debrecen Vigkedvu Mihaly utca","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:31:27.567 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarMechanic.Shared.Customer'.
+2024-05-26 12:31:27.568 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 1.5826ms
+2024-05-26 12:31:27.568 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:27.568 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 200 null application/json; charset=utf-8 2.8077ms
+2024-05-26 12:31:34.189 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa5 - null null
+2024-05-26 12:31:34.189 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:34.189 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:31:34.192 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-26 12:31:34.192 +02:00 [INF] Customer retrieved: null
+2024-05-26 12:31:34.194 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-05-26 12:31:34.202 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 13.2168ms
+2024-05-26 12:31:34.203 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:34.203 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa5 - 404 null application/problem+json; charset=utf-8 14.0121ms
+2024-05-26 12:31:39.367 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - null null
+2024-05-26 12:31:39.367 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:39.367 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:31:39.368 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"Kadar Barnabas","Lakcim":"Debrecen Vigkedvu Mihaly utca","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:31:39.368 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarMechanic.Shared.Customer'.
+2024-05-26 12:31:39.368 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 0.7872ms
+2024-05-26 12:31:39.368 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 12:31:39.369 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 200 null application/json; charset=utf-8 1.9025ms
+2024-05-26 12:32:14.504 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - application/json 130
+2024-05-26 12:32:14.504 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:32:14.504 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:14.507 +02:00 [INF] Route matched with {action = "UpdateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCustomer(System.Guid, CarMechanic.Shared.Customer) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:32:14.508 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"Kadar Barnabas","Lakcim":"Debrecen Vigkedvu Mihaly utca","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:32:14.509 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"Kadar Barnabas","Lakcim":"Debrecen Vigkedvu Mihaly utca","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:32:14.513 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (Size = 6), @p1='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Customers" SET "Lakcim" = @p0, "Nev" = @p1
+WHERE "Ugyfelszam" = @p2
+RETURNING 1;
+2024-05-26 12:32:14.518 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-05-26 12:32:14.519 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic) in 11.554ms
+2024-05-26 12:32:14.519 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:14.519 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 200 0 null 15.9639ms
+2024-05-26 12:32:29.241 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa5 - application/json 130
+2024-05-26 12:32:29.241 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:32:29.241 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:29.242 +02:00 [INF] Route matched with {action = "UpdateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCustomer(System.Guid, CarMechanic.Shared.Customer) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:32:29.243 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-05-26 12:32:29.243 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic) in 1.3913ms
+2024-05-26 12:32:29.243 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:29.243 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa5 - 400 null application/problem+json; charset=utf-8 2.4425ms
+2024-05-26 12:32:34.677 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - application/json 130
+2024-05-26 12:32:34.677 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:32:34.677 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:34.678 +02:00 [INF] Route matched with {action = "UpdateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCustomer(System.Guid, CarMechanic.Shared.Customer) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 12:32:34.678 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"string","Lakcim":"string","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:32:34.678 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Nev":"string","Lakcim":"string","Email":"user@example.com","$type":"Customer"}
+2024-05-26 12:32:34.678 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-05-26 12:32:34.679 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic) in 0.9277ms
+2024-05-26 12:32:34.679 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.UpdateCustomer (CarMechanic)'
+2024-05-26 12:32:34.679 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5018/Customer/3fa85f64-5717-4562-b3fc-2c963f66afa6 - 200 0 null 1.6147ms
+2024-05-26 12:33:02.935 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5018/Work - application/json 273
+2024-05-26 12:33:02.941 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:33:02.941 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.WorkController.CreateWork (CarMechanic)'
+2024-05-26 12:33:02.943 +02:00 [INF] Route matched with {action = "CreateWork", controller = "Work"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWork(CarMechanic.Shared.Work) on controller CarMechanic.Controllers.WorkController (CarMechanic).
+2024-05-26 12:33:02.947 +02:00 [INF] Executed action CarMechanic.Controllers.WorkController.CreateWork (CarMechanic) in 3.5839ms
+2024-05-26 12:33:02.948 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.WorkController.CreateWork (CarMechanic)'
+2024-05-26 12:33:02.950 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CarMechanic.IWorkEstimationService' while attempting to activate 'CarMechanic.Controllers.WorkController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method98(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-26 12:33:02.971 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5018/Work - 500 null text/plain; charset=utf-8 35.5581ms
+2024-05-26 12:33:21.362 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5018/Work - application/json 273
+2024-05-26 12:33:21.363 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:33:21.363 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.WorkController.CreateWork (CarMechanic)'
+2024-05-26 12:33:21.363 +02:00 [INF] Route matched with {action = "CreateWork", controller = "Work"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateWork(CarMechanic.Shared.Work) on controller CarMechanic.Controllers.WorkController (CarMechanic).
+2024-05-26 12:33:21.363 +02:00 [INF] Executed action CarMechanic.Controllers.WorkController.CreateWork (CarMechanic) in 0.4986ms
+2024-05-26 12:33:21.364 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.WorkController.CreateWork (CarMechanic)'
+2024-05-26 12:33:21.364 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CarMechanic.IWorkEstimationService' while attempting to activate 'CarMechanic.Controllers.WorkController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method98(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-26 12:33:21.367 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5018/Work - 500 null text/plain; charset=utf-8 4.8836ms
+2024-05-26 12:34:00.560 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/Work/GetAllWorks - null null
+2024-05-26 12:34:00.563 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic)'
+2024-05-26 12:34:00.568 +02:00 [INF] Route matched with {action = "GetAllWorks", controller = "Work"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Work]]] GetAllWorks() on controller CarMechanic.Controllers.WorkController (CarMechanic).
+2024-05-26 12:34:00.569 +02:00 [INF] Executed action CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic) in 0.9656ms
+2024-05-26 12:34:00.570 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic)'
+2024-05-26 12:34:00.571 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CarMechanic.IWorkEstimationService' while attempting to activate 'CarMechanic.Controllers.WorkController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method106(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-26 12:34:00.572 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/Work/GetAllWorks - 500 null text/plain; charset=utf-8 11.9578ms
+2024-05-26 12:48:32.926 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:48:32.939 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:48:32.939 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:48:32.939 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:48:33.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:48:33.142 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 84.9884ms
+2024-05-26 12:48:33.273 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:48:33.343 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.9736ms
+2024-05-26 12:54:58.415 +02:00 [INF] Now listening on: http://localhost:5018
+2024-05-26 12:54:58.427 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:54:58.428 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:54:58.428 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:54:59.125 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/index.html - null null
+2024-05-26 12:54:59.237 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/index.html - 200 null text/html;charset=utf-8 112.7652ms
+2024-05-26 12:54:59.418 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:54:59.491 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.8855ms
+2024-05-26 12:56:40.979 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - null null
+2024-05-26 12:56:40.983 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4923ms
+2024-05-26 12:56:41.084 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5018/favicon.ico - null null
+2024-05-26 12:56:41.086 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 12:56:41.087 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5018/favicon.ico - 404 0 null 2.6794ms
+2024-05-26 12:56:41.088 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5018/favicon.ico, Response status code: 404
+2024-05-26 12:58:25.020 +02:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Az összes szoftvercsatorna-cím használatának általában csak egy módja (protokoll/hálózat cím/port) engedélyezett.
+ ---> System.Net.Sockets.SocketException (10048): Az összes szoftvercsatorna-cím használatának általában csak egy módja (protokoll/hálózat cím/port) engedélyezett.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-26 12:58:40.652 +02:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:8080: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Az összes szoftvercsatorna-cím használatának általában csak egy módja (protokoll/hálózat cím/port) engedélyezett.
+ ---> System.Net.Sockets.SocketException (10048): Az összes szoftvercsatorna-cím használatának általában csak egy módja (protokoll/hálózat cím/port) engedélyezett.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-26 12:59:04.932 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 12:59:04.945 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 12:59:04.945 +02:00 [INF] Hosting environment: Development
+2024-05-26 12:59:04.945 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 12:59:29.700 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 12:59:29.725 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:59:29.732 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 32.7505ms
+2024-05-26 12:59:29.737 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 12:59:29.739 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:59:29.744 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 12:59:29.745 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 7.0883ms
+2024-05-26 12:59:29.746 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 12:59:29.779 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 12:59:29.786 +02:00 [INF] CORS policy execution successful.
+2024-05-26 12:59:29.787 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 7.2381ms
+2024-05-26 12:59:29.787 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:09:15.917 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:09:15.929 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:09:15.929 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:09:15.929 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:09:23.666 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:23.698 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:09:23.705 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 40.2712ms
+2024-05-26 13:09:23.708 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:24.957 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:24.960 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 2.3298ms
+2024-05-26 13:09:24.963 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:25.521 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:25.523 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 2.2398ms
+2024-05-26 13:09:25.523 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:25.712 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:25.712 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 0.3238ms
+2024-05-26 13:09:25.712 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:25.884 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:25.885 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 0.4486ms
+2024-05-26 13:09:25.885 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:26.046 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:26.046 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 0.4877ms
+2024-05-26 13:09:26.047 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:09:26.212 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/ - null null
+2024-05-26 13:09:26.212 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/ - 404 0 null 0.5334ms
+2024-05-26 13:09:26.213 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/, Response status code: 404
+2024-05-26 13:12:20.115 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:12:20.137 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:12:20.137 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:12:20.137 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:12:37.162 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:12:37.189 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:12:37.190 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:12:37.196 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 34.5385ms
+2024-05-26 13:12:37.200 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:12:47.134 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 13:12:47.136 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:12:47.144 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 9.5597ms
+2024-05-26 13:12:47.145 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 13:12:47.146 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:12:47.147 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 1.4211ms
+2024-05-26 13:12:47.147 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:12:47.168 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:12:47.169 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:12:47.169 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 0.9399ms
+2024-05-26 13:12:47.169 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:16:36.282 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:16:36.293 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:16:36.294 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:16:36.294 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:16:51.815 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:16:51.858 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:16:51.861 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:16:51.878 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 64.3191ms
+2024-05-26 13:16:51.886 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:17:03.038 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:17:03.040 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:17:03.041 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 2.8477ms
+2024-05-26 13:17:03.041 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:17:06.219 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 13:17:06.220 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:17:06.221 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 2.5445ms
+2024-05-26 13:17:06.223 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 13:17:06.223 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:17:06.223 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 0.5497ms
+2024-05-26 13:17:06.224 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:17:06.236 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:17:06.236 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:17:06.236 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 0.5371ms
+2024-05-26 13:17:06.237 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:30:50.276 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:30:50.289 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:30:50.290 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:30:50.290 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:31:11.153 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 13:31:11.176 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:31:11.184 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 32.3715ms
+2024-05-26 13:31:11.190 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 13:31:11.192 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:31:11.196 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:31:11.197 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 7.3488ms
+2024-05-26 13:31:11.199 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:31:11.227 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:31:11.234 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:31:11.235 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 7.3022ms
+2024-05-26 13:31:11.235 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:31:30.099 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:31:30.099 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:31:30.100 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 0.9848ms
+2024-05-26 13:31:30.100 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:33:52.506 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-26 13:33:52.524 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2024-05-26 13:33:52.538 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-05-26 13:33:52.554 +02:00 [INF] No migrations were applied. The database is already up to date.
+2024-05-26 13:34:18.081 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:34:18.092 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:34:18.092 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:34:18.093 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:34:32.218 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 13:34:32.243 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:34:32.250 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 32.7298ms
+2024-05-26 13:34:32.258 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 13:34:32.260 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:34:32.263 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:34:32.264 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 6.2318ms
+2024-05-26 13:34:32.265 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:34:32.297 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:34:32.304 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:34:32.304 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 6.6273ms
+2024-05-26 13:34:32.304 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:36:55.486 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:36:55.498 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:36:55.498 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:36:55.498 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 13:38:50.953 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 13:38:50.977 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:38:50.984 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 32.4675ms
+2024-05-26 13:38:50.990 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 13:38:50.992 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:38:50.996 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 13:38:50.997 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 7.248ms
+2024-05-26 13:38:50.998 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:38:51.028 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:38:51.035 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:38:51.035 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 7.4046ms
+2024-05-26 13:38:51.036 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:38:59.892 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customers - null null
+2024-05-26 13:38:59.893 +02:00 [INF] CORS policy execution successful.
+2024-05-26 13:38:59.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customers - 404 0 null 1.3707ms
+2024-05-26 13:38:59.893 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Customers, Response status code: 404
+2024-05-26 13:59:57.443 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 13:59:57.457 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 13:59:57.457 +02:00 [INF] Hosting environment: Development
+2024-05-26 13:59:57.457 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 14:00:17.069 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customers - null null
+2024-05-26 14:00:17.094 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:00:17.101 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customers - 204 null null 32.6432ms
+2024-05-26 14:00:17.107 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customers - application/json; charset=utf-8 160
+2024-05-26 14:00:17.109 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:00:17.113 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 14:00:17.114 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customers - 404 0 null 6.719ms
+2024-05-26 14:00:17.116 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:8080/Customers, Response status code: 404
+2024-05-26 14:00:17.145 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer - null null
+2024-05-26 14:00:17.151 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:00:17.152 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 14:00:17.169 +02:00 [INF] Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Customer]]] GetAllCustomers() on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 14:00:17.731 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+2024-05-26 14:00:17.741 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Customer, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-26 14:00:17.756 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic) in 585.4983ms
+2024-05-26 14:00:17.757 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 14:00:17.757 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer - 200 null application/json; charset=utf-8 611.5962ms
+2024-05-26 14:04:07.604 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-26 14:04:07.618 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-26 14:04:07.618 +02:00 [INF] Hosting environment: Development
+2024-05-26 14:04:07.619 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-26 14:04:21.410 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/Customer - null null
+2024-05-26 14:04:21.466 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:04:21.474 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/Customer - 204 null null 65.3291ms
+2024-05-26 14:04:21.481 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/Customer - application/json; charset=utf-8 160
+2024-05-26 14:04:21.484 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:04:21.488 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-26 14:04:21.490 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic)'
+2024-05-26 14:04:21.508 +02:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(CarMechanic.Shared.Customer) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 14:04:22.200 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-26 14:04:22.207 +02:00 [INF] Customer retrieved: null
+2024-05-26 14:04:22.297 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 31), @p2='?' (Size = 23), @p3='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Ugyfelszam", "Email", "Lakcim", "Nev")
+VALUES (@p0, @p1, @p2, @p3);
+2024-05-26 14:04:22.302 +02:00 [INF] Customer added
+2024-05-26 14:04:22.304 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-05-26 14:04:22.306 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic) in 796.4282ms
+2024-05-26 14:04:22.306 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.CreateCustomer (CarMechanic)'
+2024-05-26 14:04:22.307 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/Customer - 200 0 null 825.8465ms
+2024-05-26 14:04:22.333 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer - null null
+2024-05-26 14:04:22.338 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:04:22.339 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 14:04:22.343 +02:00 [INF] Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Customer]]] GetAllCustomers() on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 14:04:22.349 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+2024-05-26 14:04:22.357 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Customer, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-26 14:04:22.368 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic) in 24.2951ms
+2024-05-26 14:04:22.368 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-26 14:04:22.368 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer - 200 null application/json; charset=utf-8 35.5636ms
+2024-05-26 14:04:25.689 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer/74b45cc5-796b-41ee-bc41-e575b64ebe4a - null null
+2024-05-26 14:04:25.691 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:04:25.691 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 14:04:25.696 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-26 14:04:25.699 +02:00 [INF] Customer retrieved: {"Ugyfelszam":"74b45cc5-796b-41ee-bc41-e575b64ebe4a","Nev":"Barnus","Lakcim":"Vígkedvű Mihály utca 30","Email":"kadarbarnabas@mailbox.unideb.hu","$type":"Customer"}
+2024-05-26 14:04:25.701 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarMechanic.Shared.Customer'.
+2024-05-26 14:04:25.701 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 5.0764ms
+2024-05-26 14:04:25.702 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-26 14:04:25.702 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer/74b45cc5-796b-41ee-bc41-e575b64ebe4a - 200 null application/json; charset=utf-8 12.8094ms
+2024-05-26 14:04:28.228 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Works - null null
+2024-05-26 14:04:28.229 +02:00 [INF] CORS policy execution successful.
+2024-05-26 14:04:28.229 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Works - 404 0 null 1.6506ms
+2024-05-26 14:04:28.230 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8080/Works, Response status code: 404

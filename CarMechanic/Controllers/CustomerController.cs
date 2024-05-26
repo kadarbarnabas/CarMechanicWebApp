@@ -17,9 +17,9 @@ public class CustomerController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateCustomer([FromBody] Customer customer)
     {
-        var existingWork = await _customerService.GetCustomer(customer.Ugyfelszam);
+        var existingCustomer = await _customerService.GetCustomer(customer.Ugyfelszam);
 
-        if (existingWork is not null)
+        if (existingCustomer is not null)
         {
             return Conflict();
         }
@@ -71,9 +71,9 @@ public class CustomerController : ControllerBase
             return BadRequest();
         }
 
-        var existingWork = await _customerService.GetCustomer(id);
+        var existingCustomer = await _customerService.GetCustomer(id);
 
-        if (existingWork is null)
+        if (existingCustomer is null)
         {
             return NotFound();
         }

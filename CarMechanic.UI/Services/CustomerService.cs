@@ -14,27 +14,27 @@ namespace CarMechanic.UI.Services
 
         public async Task CreateCustomerAsync(Customer customer)
         {
-            await _httpClient.PostAsJsonAsync("/Customers", customer);
+            await _httpClient.PostAsJsonAsync("/Customer", customer);
         }
 
         public async Task DeleteCustomerAsync(Guid id)
         {
-            await _httpClient.DeleteAsync($"/Customers/{id}");
+            await _httpClient.DeleteAsync($"/Customer/{id}");
         }
 
         public async Task<Customer> GetCustomerAsync(Guid id)
         {
-            return await _httpClient.GetFromJsonAsync<Customer>($"Customers/{id}");
+            return await _httpClient.GetFromJsonAsync<Customer>($"Customer/{id}");
         }
 
         public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
         {
-            return await _httpClient.GetFromJsonAsync<IEnumerable<Customer>>("/Customers");
+            return await _httpClient.GetFromJsonAsync<IEnumerable<Customer>>("/Customer");
         }
 
         public async Task UpdateCustomerAsync(Guid id, Customer customer)
         {
-            await _httpClient.PutAsJsonAsync($"/Customers/{id}", customer);
+            await _httpClient.PutAsJsonAsync($"/Customer/{id}", customer);
         }
     }
 }
