@@ -8,6 +8,8 @@ public class WorkService : IWorkService
 {
     private readonly CarMechanicContext _context;
     private readonly ILogger<WorkService> _logger;
+    //private readonly  WorkHouresCalculator workHouresCalculator;
+
     public WorkService(ILogger<WorkService> logger, CarMechanicContext context)
     {
         _logger = logger;
@@ -15,7 +17,10 @@ public class WorkService : IWorkService
     }
 
     public async Task CreateWork(Work work)
-    {
+    {   
+        var whc = new WorkHouresCalculator();
+        work.BecsultOra = whc.CalculateWorkHours(work.Kategoria, work.GyartasiEv, work.HibaSulyossag);
+
         await _context.Works.AddAsync(work);
         await _context.SaveChangesAsync();
 
@@ -53,7 +58,11 @@ public class WorkService : IWorkService
         work.HibakLeirasa = newWork.HibakLeirasa;
         work.HibaSulyossag = newWork.HibaSulyossag;
         work.Allapot = newWork.Allapot;
+        
+        var whc = new WorkHouresCalculator();
+        work.BecsultOra = whc.CalculateWorkHours(work.Kategoria, work.GyartasiEv, work.HibaSulyossag);
 
         await _context.SaveChangesAsync();
     }
+
 }

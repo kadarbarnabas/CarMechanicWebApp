@@ -2,7 +2,6 @@
 @using CarMechanic.Shared
 @using CarMechanic.UI.Services
 @inject IWorkService WorkService
-@inject ICustomerService CustomerService
 
 <h3>WorkList</h3>
 
@@ -33,8 +32,8 @@ else
                     <td>@work.Kategoria</td>
                     <td>@work.HibaSulyossag</td>
                     <td>@work.Allapot</td>
-                    <td>10</td>
-                    <td><a href="worklist/@work.MunkaId" class="btn btn-primary">Részletes Adatok</a></td>
+                    <td>@work.BecsultOra</td>
+                    <td><a href="work/list/@work.MunkaId" class="btn btn-primary">Részletes Adatok</a></td>
                 </tr>
             }
         </tbody>
@@ -48,5 +47,4 @@ else
     {
         Works = await WorkService.GetAllWorksAsync();
     }
-
 }

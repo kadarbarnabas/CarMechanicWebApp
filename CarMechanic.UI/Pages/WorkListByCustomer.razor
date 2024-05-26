@@ -33,7 +33,7 @@ else
                     <td>@work.Kategoria</td>
                     <td>@work.HibaSulyossag</td>
                     <td>@work.Allapot</td>
-                    <td>10</td>
+                    <td>@work.BecsultOra</td>
                     <td><button @onclick="() => ShowDescription(work.MunkaId)">Részletes Leírás</button></td>
                 </tr>
             }
@@ -55,6 +55,6 @@ else
 
     private void ShowDescription(Guid workId)
     {
-        navigationManager.NavigateTo($"/worklist/{workId}");
+        navigationManager.NavigateTo($"/work/list/{workId}");
     }
 }

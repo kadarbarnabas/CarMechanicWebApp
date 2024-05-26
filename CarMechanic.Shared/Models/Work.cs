@@ -33,5 +33,7 @@ namespace CarMechanic.Shared
         [Required]
         [RegularExpression("Felvett Munka|Elvégzés alatt|Befejezett")]
         public string Allapot { get; set; }
+        
+        public int BecsultOra { get; set; }
     }
 }

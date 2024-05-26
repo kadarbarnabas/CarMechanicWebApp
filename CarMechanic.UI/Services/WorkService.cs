@@ -37,6 +37,5 @@ namespace CarMechanic.UI.Services
         {
             await _httpClient.PutAsJsonAsync($"/Work/{id}", work);
         }
-        
     }
 }

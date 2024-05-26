@@ -30,13 +30,14 @@ namespace CarMechanic.Migrations
                 columns: table => new
                 {
                     MunkaId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Ugyfelszam = table.Column<Guid>(type: "TEXT", nullable: false),
+                    Ugyfelszam = table.Column<string>(type: "TEXT", nullable: false),
                     Rendszam = table.Column<string>(type: "TEXT", nullable: false),
                     GyartasiEv = table.Column<int>(type: "INTEGER", nullable: false),
                     Kategoria = table.Column<string>(type: "TEXT", nullable: false),
                     HibakLeirasa = table.Column<string>(type: "TEXT", nullable: false),
                     HibaSulyossag = table.Column<int>(type: "INTEGER", nullable: false),
-                    Allapot = table.Column<string>(type: "TEXT", nullable: false)
+                    Allapot = table.Column<string>(type: "TEXT", nullable: false),
+                    BecsultOra = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
