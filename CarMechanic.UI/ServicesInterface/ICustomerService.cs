@@ -1,6 +1,6 @@
 using CarMechanic.Shared;
 
-namespace CarMechanic;
+namespace CarMechanic.UI.Services;
 
 public interface ICustomerService
 {

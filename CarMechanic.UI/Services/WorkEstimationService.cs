@@ -1,7 +1,6 @@
 using CarMechanic.Shared;
-using Microsoft.EntityFrameworkCore;
 
-namespace CarMechanic;
+namespace CarMechanic.UI.Services;
 
 public class WorkEstimationService : IWorkEstimationService
 {

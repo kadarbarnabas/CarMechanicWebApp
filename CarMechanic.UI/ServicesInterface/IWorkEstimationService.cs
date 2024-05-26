@@ -1,9 +1,8 @@
 using System.Threading.Tasks;
 
-namespace CarMechanic
+namespace CarMechanic.UI.Services;
+
+public interface IWorkEstimationService
 {
-    public interface IWorkEstimationService
-    {
-        Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity);
-    }
+    Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity);
 }
