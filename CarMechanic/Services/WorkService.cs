@@ -8,7 +8,6 @@ public class WorkService : IWorkService
 {
     private readonly CarMechanicContext _context;
     private readonly ILogger<WorkService> _logger;
-    //private readonly  WorkHouresCalculator workHouresCalculator;
 
     public WorkService(ILogger<WorkService> logger, CarMechanicContext context)
     {
@@ -64,5 +63,7 @@ public class WorkService : IWorkService
 
         await _context.SaveChangesAsync();
     }
+
+    
 
 }
