@@ -10,7 +10,7 @@
         "dependencies": {
           "CarMechanic": "1.0.0",
           "CarMechanic.Shared": "1.0.0",
-          "Microsoft.EntityFrameworkCore.InMemory": "5.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.3",
           "Microsoft.NET.Test.Sdk": "17.6.0",
           "Moq": "4.20.70",
           "coverlet.collector": "6.0.0",
@@ -75,14 +75,14 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.3": {},
-      "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.3": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.3"
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.52303"
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "8.0.3.0",
+            "fileVersion": "8.0.324.11510"
           }
         }
       },
@@ -1588,12 +1588,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/8.0.3",
       "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4p98EdOJXs56nr7N+UjKvwEhAMs0uiJnJjXFSgpiaq9ZbAa5PEMklC0Q6yDEg6I5B4/GvVgb5vMhjn6P2t15Bg==",
-      "path": "microsoft.entityframeworkcore.inmemory/5.0.0",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512"
+      "sha512": "sha512-43rqIfq1/CGcIqCvQoZ2F/a2YJc1c2jdPQB6/6VtvYCg2aeXfQi2sEjj/hNiO+RI+Tz+Bq0/oXoejbGMUO7hZA==",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.3",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.8.0.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Proxies/8.0.3": {
       "type": "package",

@@ -110,7 +110,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

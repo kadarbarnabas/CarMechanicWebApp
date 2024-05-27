@@ -5,6 +5,7 @@ namespace CarMechanic;
 
 public class CarMechanicContext : DbContext
 {
+    public CarMechanicContext() { }
     public CarMechanicContext(DbContextOptions<CarMechanicContext> options)
         : base(options)
     {
