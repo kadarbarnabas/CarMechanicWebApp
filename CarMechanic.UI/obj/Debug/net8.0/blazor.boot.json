@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CarMechanic.UI",
   "resources": {
-    "hash": "sha256-t15diLPna0khjIIFofaP+1zwabi0XoENfamsGwaRbck=",
+    "hash": "sha256-ItWklMok24uzCv2ICNSTLlHliLgrAKn8RwfLelPr1uE=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.06om9703r7.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -208,12 +208,12 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "CarMechanic.Shared.wasm": "sha256-KFiTcTMAoGlDdYrFvgv2EbXe8jKdLHK7O1jU9VwKDY4=",
-      "CarMechanic.UI.wasm": "sha256-96laWl5sl9b+S8iU/VruokQHWBKJv0+Mplyevfbd6bM="
+      "CarMechanic.Shared.wasm": "sha256-Rm7GpABrIMKEbHPWP2U0OF9kTp5wUjA7yPSLuzPO1Pw=",
+      "CarMechanic.UI.wasm": "sha256-KJBCZeLTWrKYrkogIgAXtY8kT3cMJrkatuNHZRPJCfo="
     },
     "pdb": {
-      "CarMechanic.Shared.pdb": "sha256-i581Y2HXfblnfBuGlqEuqrfZrJjdTpVVl8EHIK3q2VA=",
-      "CarMechanic.UI.pdb": "sha256-k2C4gRwCXkirtKqFqbM8JhU2Gey/Bcp3tkv2vtWqnvM="
+      "CarMechanic.Shared.pdb": "sha256-l0T6hkjAcbhXtRcAX6tDBAzx6ABljxobLYAMa95N/0s=",
+      "CarMechanic.UI.pdb": "sha256-ffaZCa9CnbOTx/v5zJoICD18aj9cFV87gjkEcuXj0VE="
     }
   },
   "cacheBootResources": true,
