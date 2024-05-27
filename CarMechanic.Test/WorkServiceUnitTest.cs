@@ -145,8 +145,4 @@ public class WorkServiceTests
         Assert.Equal(newWork.Ugyfelszam, existingWork.Ugyfelszam);
         mockContext.Verify(m => m.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
     }
-
-
-
-
 }
