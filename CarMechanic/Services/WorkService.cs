@@ -8,18 +8,19 @@ public class WorkService : IWorkService
 {
     private readonly CarMechanicContext _context;
     private readonly ILogger<WorkService> _logger;
-    private readonly WorkEstimationService _workEstimationService;
+    //private readonly  WorkHouresCalculator workHouresCalculator;
 
-    public WorkService(ILogger<WorkService> logger, CarMechanicContext context, WorkEstimationService workEstimationService)
+    public WorkService(ILogger<WorkService> logger, CarMechanicContext context)
     {
         _logger = logger;
         _context = context;
-        _workEstimationService = workEstimationService;
-
     }
 
     public async Task CreateWork(Work work)
-    {
+    {   
+        var whc = new WorkHouresCalculator();
+        work.BecsultOra = whc.CalculateWorkHours(work.Kategoria, work.GyartasiEv, work.HibaSulyossag);
+
         await _context.Works.AddAsync(work);
         await _context.SaveChangesAsync();
 
@@ -57,14 +58,11 @@ public class WorkService : IWorkService
         work.HibakLeirasa = newWork.HibakLeirasa;
         work.HibaSulyossag = newWork.HibaSulyossag;
         work.Allapot = newWork.Allapot;
+        
+        var whc = new WorkHouresCalculator();
+        work.BecsultOra = whc.CalculateWorkHours(work.Kategoria, work.GyartasiEv, work.HibaSulyossag);
 
         await _context.SaveChangesAsync();
-    }
-
-    public async Task<int> EstimateWorkHoursAsync(string category, int carAge, int severity)
-    {
-        var estimation = await _workEstimationService.EstimateWorkHoursAsync(category, carAge, severity);
-        return estimation;
     }
 
 }

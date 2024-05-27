@@ -1,0 +1,64 @@
+@using CarMechanic.Shared
+<EditForm Model="Work" OnValidSubmit="() => OnValidSubmit()">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3">
+        <label class="form-label">Customer Id</label>
+        <InputText @bind-Value="@Work.Ugyfelszam" class="form-control"/>
+        <ValidationMessage For="() => Work.Ugyfelszam" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">License Plate</label>
+        <InputText @bind-Value="Work.Rendszam" class="form-control"/>
+        <ValidationMessage For="() => Work.Rendszam" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Manufacturing Year</label>
+        <InputNumber @bind-Value="Work.GyartasiEv" class="form-control"/>
+        <ValidationMessage For="() => Work.GyartasiEv" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <InputSelect @bind-Value="Work.Kategoria" class="form-control">
+            <option value="">Select a category</option>
+            <option value="Karosszéria">Karosszéria</option>
+            <option value="Motor">Motor</option>
+            <option value="Futómű">Futómű</option>
+            <option value="Fékberendezés">Fékberendezés</option>
+        </InputSelect>
+        <ValidationMessage For="() => Work.Kategoria" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <InputText @bind-Value="Work.HibakLeirasa" class="form-control"/>
+        <ValidationMessage For="() => Work.HibakLeirasa" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Severity</label>
+        <InputNumber @bind-Value="Work.HibaSulyossag" class="form-control"/>
+        <ValidationMessage For="() => Work.HibaSulyossag" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Status</label>
+        <InputSelect @bind-Value="Work.Allapot" class="form-control">
+            <option value="">Select a Status</option>
+            <option value="Felvett Munka">Felvett</option>
+            <option value="Elvégzés alatt">Elvégzés alatt</option>
+            <option value="Befejezett">Befejezett</option>
+        </InputSelect>
+        <ValidationMessage For="() => Work.Allapot" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">@ButtonText</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Work Work { get; set; }
+    
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+
+    [Parameter]
+    public string ButtonText { get; set; }
+}

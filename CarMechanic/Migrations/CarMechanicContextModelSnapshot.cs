@@ -54,6 +54,9 @@ namespace CarMechanic.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("BecsultOra")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("GyartasiEv")
                         .HasColumnType("INTEGER");
 
@@ -72,7 +75,8 @@ namespace CarMechanic.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid>("Ugyfelszam")
+                    b.Property<string>("Ugyfelszam")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("MunkaId");

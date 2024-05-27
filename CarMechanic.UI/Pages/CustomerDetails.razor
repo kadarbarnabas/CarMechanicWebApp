@@ -1,0 +1,53 @@
+@page "/customer/{id:guid}"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Components
+@using CarMechanic.UI.Services
+
+@inject ICustomerService CustomerService
+@inject NavigationManager NavigationManager
+
+@if (Customers is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <button @onclick="() => ShowWorkList(Id)">Munkák listázása</button>
+    <button class="btn btn-primary" @onclick="() => AddNewWork(Id)">Új Munka Hozzáadása</button>
+    <CustomerForm Customer="Customers" OnValidSubmit="UpdateAsync" ButtonText="Ügyfél Frissítése" />
+    <button class="btn btn-warning" @onclick="DeleteAsync">Törlés</button>
+}
+
+@code {
+    
+    [Parameter]
+    public Guid Id { get; set; }
+    
+    private Customer? Customers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Customers = await CustomerService.GetCustomerAsync(Id);
+    }
+    private void ShowWorkList(Guid customerId)
+    {
+        NavigationManager.NavigateTo($"/customer/{customerId}/worklist");
+    }
+
+    private async Task DeleteAsync()
+    {
+        await CustomerService.DeleteCustomerAsync(Id);
+        NavigationManager.NavigateTo("/customer/list");
+    }
+
+    private async Task UpdateAsync()
+    {
+        await CustomerService.UpdateCustomerAsync(Id, Customers);
+        NavigationManager.NavigateTo("/customer/list");
+    }
+
+    private void AddNewWork(Guid customerId)
+    {
+        NavigationManager.NavigateTo($"/customer/{customerId}/addwork");
+    }
+}

@@ -1,0 +1,60 @@
+@page "/customer/{id:guid}/worklist"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Services
+@inject IWorkService WorkService
+@inject NavigationManager navigationManager
+
+<h3>Munkalista</h3>
+
+@if (Works is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Rendszám</th>
+                <th>Gyártási év</th>
+                <th>Munka kategória</th>
+                <th>Súlyosság</th>
+                <th>Munka állapota</th>
+                <th>Munka óra esztimáció</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var work in Works)
+            {
+                <tr>
+                    <td>@work.Rendszam</td>
+                    <td>@work.GyartasiEv</td>
+                    <td>@work.Kategoria</td>
+                    <td>@work.HibaSulyossag</td>
+                    <td>@work.Allapot</td>
+                    <td>@work.BecsultOra</td>
+                    <td><button @onclick="() => ShowDescription(work.MunkaId)">Részletes Leírás</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public Guid Id { get; set; }
+
+    private IEnumerable<Work>? Works { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var allWorks = await WorkService.GetAllWorksAsync();
+        Works = allWorks.Where(w => w.Ugyfelszam == Id.ToString()).ToList();
+    }
+
+    private void ShowDescription(Guid workId)
+    {
+        navigationManager.NavigateTo($"/work/list/{workId}");
+    }
+}

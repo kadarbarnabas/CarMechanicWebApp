@@ -1,0 +1,44 @@
+@page "/customer/list"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Services
+@inject ICustomerService CustomerService
+
+<h3>CustomerList</h3>
+
+@if (Customers is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Név</th>
+            <th>Lakcím</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var customer in Customers)
+        {
+            <tr>
+                <td>@customer.Nev</td>
+                <td>@customer.Lakcim</td>
+                <td>@customer.Email</td>
+                <td><a href="/customer/@customer.Ugyfelszam" class="btn btn-primary">Adatok</a></td>
+            </tr>
+        }
+        </tbody>
+    </table> 
+}
+
+@code {
+    private IEnumerable<Customer>? Customers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Customers = await CustomerService.GetAllCustomersAsync();
+    }
+
+}

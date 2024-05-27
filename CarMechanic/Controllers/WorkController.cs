@@ -8,11 +8,9 @@ namespace CarMechanic.Controllers;
 public class WorkController : ControllerBase
 {
     private readonly IWorkService _workService;
-    private readonly IWorkEstimationService _workEstimationService;
-    public WorkController(IWorkService workService,  IWorkEstimationService workEstimationService)
+    public WorkController(IWorkService workService)
     {
         _workService = workService;
-        _workEstimationService = workEstimationService;
     }
 
     [HttpPost]
@@ -58,7 +56,7 @@ public class WorkController : ControllerBase
         return Ok(work);
     }
 
-    [HttpGet("GetAllWorks")]
+    [HttpGet]
     public async Task<ActionResult<List<Work>>> GetAllWorks()
     {
         return Ok(await _workService.GetAllWorks());
@@ -82,19 +80,5 @@ public class WorkController : ControllerBase
         await _workService.UpdateWork(newWork);
 
         return Ok();
-    }
-
-    [HttpGet("EstimateWorkHours")]
-    public async Task<IActionResult> EstimateWorkHours([FromQuery] string category, [FromQuery] int carAge, [FromQuery] int severity)
-    {
-        try
-        {
-            var estimation = await _workEstimationService.EstimateWorkHoursAsync(category, carAge, severity);
-            return Ok(estimation);
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex);
-        }
     }
 }

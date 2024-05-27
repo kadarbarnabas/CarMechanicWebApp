@@ -1,0 +1,20 @@
+@page "/customer/add"
+@using CarMechanic.Shared
+@using CarMechanic.UI.Services
+@using CarMechanic.UI.Components
+@inject ICustomerService CustomerService
+@inject NavigationManager NavigationManager
+
+<h3>CustomerAdd</h3>
+
+<CustomerForm Customer="Customer" OnValidSubmit="CreateCustomerAsync" ButtonText="Ugyfel Hozzaadasa" />
+
+@code {
+    private Customer Customer { get; set; } = new();
+
+    private async Task CreateCustomerAsync()
+    {
+        await CustomerService.CreateCustomerAsync(Customer);
+        NavigationManager.NavigateTo("/customer/list");
+    }
+}
