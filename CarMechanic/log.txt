@@ -6715,3 +6715,83 @@ FROM "Works" AS "w"
 2024-05-27 17:25:27.661 +02:00 [INF] Executed action CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic) in 2.5865ms
 2024-05-27 17:25:27.662 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic)'
 2024-05-27 17:25:27.662 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Work - 200 null application/json; charset=utf-8 3.5423ms
+2024-05-30 14:03:35.710 +02:00 [INF] Now listening on: http://localhost:8080
+2024-05-30 14:03:35.725 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-30 14:03:35.725 +02:00 [INF] Hosting environment: Development
+2024-05-30 14:03:35.725 +02:00 [INF] Content root path: D:\develpoment\c#Beadando\CarMechanic\CarMechanic
+2024-05-30 14:03:54.102 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer - null null
+2024-05-30 14:03:54.138 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:03:54.140 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-05-30 14:03:54.142 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-30 14:03:54.159 +02:00 [INF] Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Customer]]] GetAllCustomers() on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-30 14:03:55.390 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+2024-05-30 14:03:55.430 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Customer, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-30 14:03:55.454 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic) in 1292.6957ms
+2024-05-30 14:03:55.455 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-30 14:03:55.464 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer - 200 null application/json; charset=utf-8 1364.6839ms
+2024-05-30 14:03:57.475 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - null null
+2024-05-30 14:03:57.478 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:03:57.478 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:03:57.486 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-30 14:03:57.574 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-30 14:03:57.578 +02:00 [INF] Customer retrieved: {"LazyLoader":{"$type":"LazyLoader"},"Ugyfelszam":"8a75ce51-294b-4dd3-946c-1d5971d81757","Nev":"Kádár Barnabás","Lakcim":"Vígkedvű Mihály utca","Email":"kadarbarnabas@example.hu","$type":"CustomerProxy"}
+2024-05-30 14:03:57.580 +02:00 [INF] Executing OkObjectResult, writing value of type 'Castle.Proxies.CustomerProxy'.
+2024-05-30 14:03:57.583 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 96.4297ms
+2024-05-30 14:03:57.583 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:03:57.584 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - 200 null application/json; charset=utf-8 108.7147ms
+2024-05-30 14:03:58.688 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Work - null null
+2024-05-30 14:03:58.690 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:03:58.690 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic)'
+2024-05-30 14:03:58.692 +02:00 [INF] Route matched with {action = "GetAllWorks", controller = "Work"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Work]]] GetAllWorks() on controller CarMechanic.Controllers.WorkController (CarMechanic).
+2024-05-30 14:03:58.737 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "w"."MunkaId", "w"."Allapot", "w"."BecsultOra", "w"."GyartasiEv", "w"."HibaSulyossag", "w"."HibakLeirasa", "w"."Kategoria", "w"."Rendszam", "w"."Ugyfelszam"
+FROM "Works" AS "w"
+2024-05-30 14:03:58.749 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Work, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-30 14:03:58.755 +02:00 [INF] Executed action CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic) in 63.0147ms
+2024-05-30 14:03:58.755 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.WorkController.GetAllWorks (CarMechanic)'
+2024-05-30 14:03:58.756 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Work - 200 null application/json; charset=utf-8 68.2613ms
+2024-05-30 14:04:00.652 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - null null
+2024-05-30 14:04:00.653 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:04:00.653 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:04:00.654 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-30 14:04:00.661 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-30 14:04:00.663 +02:00 [INF] Customer retrieved: {"LazyLoader":{"$type":"LazyLoader"},"Ugyfelszam":"8a75ce51-294b-4dd3-946c-1d5971d81757","Nev":"Kádár Barnabás","Lakcim":"Vígkedvű Mihály utca","Email":"kadarbarnabas@example.hu","$type":"CustomerProxy"}
+2024-05-30 14:04:00.663 +02:00 [INF] Executing OkObjectResult, writing value of type 'Castle.Proxies.CustomerProxy'.
+2024-05-30 14:04:00.664 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 10.0293ms
+2024-05-30 14:04:00.665 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:04:00.665 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - 200 null application/json; charset=utf-8 12.7097ms
+2024-05-30 14:04:03.373 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer - null null
+2024-05-30 14:04:03.374 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:04:03.374 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-30 14:04:03.374 +02:00 [INF] Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarMechanic.Shared.Customer]]] GetAllCustomers() on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-30 14:04:03.376 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+2024-05-30 14:04:03.377 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarMechanic.Shared.Customer, CarMechanic.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-30 14:04:03.377 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic) in 2.7784ms
+2024-05-30 14:04:03.377 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetAllCustomers (CarMechanic)'
+2024-05-30 14:04:03.377 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer - 200 null application/json; charset=utf-8 4.3999ms
+2024-05-30 14:04:05.122 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - null null
+2024-05-30 14:04:05.123 +02:00 [INF] CORS policy execution successful.
+2024-05-30 14:04:05.123 +02:00 [INF] Executing endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:04:05.123 +02:00 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarMechanic.Shared.Customer]] GetCustomer(System.Guid) on controller CarMechanic.Controllers.CustomerController (CarMechanic).
+2024-05-30 14:04:05.126 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Ugyfelszam", "c"."Email", "c"."Lakcim", "c"."Nev"
+FROM "Customers" AS "c"
+WHERE "c"."Ugyfelszam" = @__get_Item_0
+LIMIT 1
+2024-05-30 14:04:05.127 +02:00 [INF] Customer retrieved: {"LazyLoader":{"$type":"LazyLoader"},"Ugyfelszam":"8a75ce51-294b-4dd3-946c-1d5971d81757","Nev":"Kádár Barnabás","Lakcim":"Vígkedvű Mihály utca","Email":"kadarbarnabas@example.hu","$type":"CustomerProxy"}
+2024-05-30 14:04:05.127 +02:00 [INF] Executing OkObjectResult, writing value of type 'Castle.Proxies.CustomerProxy'.
+2024-05-30 14:04:05.127 +02:00 [INF] Executed action CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic) in 4.0306ms
+2024-05-30 14:04:05.127 +02:00 [INF] Executed endpoint 'CarMechanic.Controllers.CustomerController.GetCustomer (CarMechanic)'
+2024-05-30 14:04:05.127 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/Customer/8a75ce51-294b-4dd3-946c-1d5971d81757 - 200 null application/json; charset=utf-8 5.1347ms
