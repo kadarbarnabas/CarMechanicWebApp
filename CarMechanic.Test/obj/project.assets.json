@@ -7951,11 +7951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Test\\CarMechanic.Test.csproj",
+      "projectUniqueName": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Test\\CarMechanic.Test.csproj",
       "projectName": "CarMechanic.Test",
-      "projectPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Test\\CarMechanic.Test.csproj",
+      "projectPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Test\\CarMechanic.Test.csproj",
       "packagesPath": "C:\\Users\\kadar\\.nuget\\packages\\",
-      "outputPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Test\\obj\\",
+      "outputPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kadar\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7970,11 +7970,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Shared\\CarMechanic.Shared.csproj": {
-              "projectPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Shared\\CarMechanic.Shared.csproj"
+            "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Shared\\CarMechanic.Shared.csproj": {
+              "projectPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Shared\\CarMechanic.Shared.csproj"
             },
-            "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic\\CarMechanic.csproj": {
-              "projectPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic\\CarMechanic.csproj"
+            "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic\\CarMechanic.csproj": {
+              "projectPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic\\CarMechanic.csproj"
             }
           }
         }

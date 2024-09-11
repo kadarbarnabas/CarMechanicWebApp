@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "218IzRe4MXvH+o0CCjK3vFqAaoaZvNXxaIDy0ds9wMwLvPw3P3w+sz3PYOoC8v9+iJlRhPN8meg6PoIg9dLBqg==",
+  "dgSpecHash": "HtwCH0bUv3DyTo9xAebMiVB5oM39WtpmJhGDMU5hOh8WBhIs122wT6rTH707GRQ3KWpSRrYF0caLdV0GZ6r0uQ==",
   "success": true,
-  "projectFilePath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic\\CarMechanic.csproj",
+  "projectFilePath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic\\CarMechanic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kadar\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\kadar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -78,31 +78,6 @@ public class WorkServiceTests
         Assert.Equal(workId, result.MunkaId);
     }
 
-    /*
-    [Fact]
-    public async Task GetAllWorks_FetchesAllEntries()
-    {
-        // Arrange
-        var mockLogger = new Mock<ILogger<WorkService>>();
-        var mockContext = new Mock<CarMechanicContext>();
-        var dbSetMock = new Mock<DbSet<Work>>();
-        var testData = new List<Work>
-        {
-            new Work { MunkaId = Guid.NewGuid() },
-            new Work { MunkaId = Guid.NewGuid() }
-        };
-        dbSetMock.Setup(m => m.ToListAsync(It.IsAny<CancellationToken>())).ReturnsAsync(testData);
-        mockContext.Setup(m => m.Works).Returns(dbSetMock.Object);
-        var service = new WorkService(mockLogger.Object, mockContext.Object);
-
-        // Act
-        var result = await service.GetAllWorks();
-
-        // Assert
-        Assert.Equal(2, result.Count);
-        dbSetMock.Verify(m => m.ToListAsync(It.IsAny<CancellationToken>()), Times.Once);
-    }*/
-
     [Fact]
     public async Task UpdateWork_ModifiesExistingEntry()
     {

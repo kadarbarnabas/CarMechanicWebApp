@@ -13,67 +13,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = CarMechanic.UI
 build_property.RootNamespace = CarMechanic.UI
-build_property.ProjectDir = D:\develpoment\c#Beadando\CarMechanic\CarMechanic.UI\
+build_property.ProjectDir = C:\Users\kadar\Desktop\CarMechanic\CarMechanicWebApp\CarMechanic.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\develpoment\c#Beadando\CarMechanic\CarMechanic.UI
+build_property.MSBuildProjectDirectory = C:\Users\kadar\Desktop\CarMechanic\CarMechanicWebApp\CarMechanic.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/App.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Components/CustomerForm.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Components/CustomerForm.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDdXN0b21lckZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Components/WorkForm.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Components/WorkForm.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xXb3JrRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/CustomerAdd.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/CustomerAdd.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJBZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/CustomerDetails.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/CustomerDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/CustomerList.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/CustomerList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/Home.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/WorkAdd.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/WorkAdd.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya0FkZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/WorkDetails.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/WorkDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya0RldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/WorkList.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/WorkList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Pages/WorkListByCustomer.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Pages/WorkListByCustomer.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya0xpc3RCeUN1c3RvbWVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/_Imports.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Layout/MainLayout.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-a4g368ca9w
 
-[D:/develpoment/c\#Beadando/CarMechanic/CarMechanic.UI/Layout/NavMenu.razor]
+[C:/Users/kadar/Desktop/CarMechanic/CarMechanicWebApp/CarMechanic.UI/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-1gisgaokco

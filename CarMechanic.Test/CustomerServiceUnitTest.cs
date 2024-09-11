@@ -41,7 +41,7 @@ public class CustomerServiceTests
         mockContext.Verify(m => m.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once());
     }
     [Fact]
-    public async Task DeleteCustomer_SuccessfullyRemovesCustomer()
+    public async Task DeleteCustomer_RemovesCustomerSuccessfully()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<CustomerService>>();
@@ -66,7 +66,7 @@ public class CustomerServiceTests
     }
 
     [Fact]
-    public async Task GetCustomer_RetrievesCustomerById()
+    public async Task GetCustomer_ReturnsCorrectCustomer()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<CustomerService>>();
@@ -93,31 +93,9 @@ public class CustomerServiceTests
         Assert.Equal("alice@example.com", result.Email);
         Assert.Equal("5678 Avenue", result.Lakcim);
     }
-    /*
-    [Fact]
-    public async Task GetAllCustomers_ReturnsListOfAllCustomers()
-    {
-        // Arrange
-        var mockLogger = new Mock<ILogger<CustomerService>>();
-        var mockContext = new Mock<CarMechanicContext>();
-        var service = new CustomerService(mockLogger.Object, mockContext.Object);
-        var customers = new List<Customer>
-        {
-            new Customer { Ugyfelszam = Guid.NewGuid(), Nev = "John Doe", Email = "john.doe@example.com", Lakcim = "123 Main St" },
-            new Customer { Ugyfelszam = Guid.NewGuid(), Nev = "Jane Smith", Email = "jane.smith@example.com", Lakcim = "456 Elm St" }
-        };
-
-        mockContext.Setup(m => m.Customers.ToListAsync(default)).ReturnsAsync(customers);
-
-        // Act
-        var result = await service.GetAllCustomers();
-
-        // Assert
-        Assert.Equal(customers.Count, result.Count);
-    }*/
 
     [Fact]
-    public async Task UpdateCustomer_SuccessfullyUpdatesCustomerDetails()
+    public async Task UpdateCustomer_UpdatesCustomerDetailsSuccessfully()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<CustomerService>>();

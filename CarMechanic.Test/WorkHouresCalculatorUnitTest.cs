@@ -10,7 +10,7 @@ namespace CarMechanic.Test;
 public class WorkHouresCalculatorUnitTest
 {   
     [Fact]
-    public void calculateWorkHours_forNewCar_withMinorSeverity()
+    public void CalculateWorkHours_ForNewCarWithMinorSeverity_ReturnsCorrectValue()
     {
         // Arrange
         var calculator = new WorkHouresCalculator();
@@ -26,7 +26,7 @@ public class WorkHouresCalculatorUnitTest
     }
 
     [Fact]
-    public void throw_exception_for_unknown_category()
+    public void CalculateWorkHours_ThrowsExceptionForUnknownCategory()
     {
         // Arrange
         var calculator = new WorkHouresCalculator();
@@ -39,7 +39,7 @@ public class WorkHouresCalculatorUnitTest
     }
 
     [Fact]
-    public void calculate_work_hours_for_old_car_with_maximum_severity()
+    public void CalculateWorkHours_ForOldCarWithMaximumSeverity_ReturnsCorrectValue()
     {
         // Arrange
         var calculator = new WorkHouresCalculator();
@@ -55,7 +55,7 @@ public class WorkHouresCalculatorUnitTest
     }
 
     [Fact]
-    public void calculate_work_hours_for_mid_aged_car_with_moderate_severity()
+    public void CalculateWorkHours_ForMidAgedCarWithModerateSeverity_ReturnsCorrectValue()
     {
         // Arrange
         var calculator = new WorkHouresCalculator();
@@ -71,7 +71,7 @@ public class WorkHouresCalculatorUnitTest
     }
 
     [Fact]
-    public void calculate_work_hours_for_different_categories()
+    public void CalculateWorkHours_ForDifferentCategories_ReturnsCorrectValues()
     {
         // Arrange
         var calculator = new WorkHouresCalculator();

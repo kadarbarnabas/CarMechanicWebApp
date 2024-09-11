@@ -2088,11 +2088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.UI\\CarMechanic.UI.csproj",
+      "projectUniqueName": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.UI\\CarMechanic.UI.csproj",
       "projectName": "CarMechanic.UI",
-      "projectPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.UI\\CarMechanic.UI.csproj",
+      "projectPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.UI\\CarMechanic.UI.csproj",
       "packagesPath": "C:\\Users\\kadar\\.nuget\\packages\\",
-      "outputPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.UI\\obj\\",
+      "outputPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kadar\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2107,8 +2107,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Shared\\CarMechanic.Shared.csproj": {
-              "projectPath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Shared\\CarMechanic.Shared.csproj"
+            "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Shared\\CarMechanic.Shared.csproj": {
+              "projectPath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Shared\\CarMechanic.Shared.csproj"
             }
           }
         }

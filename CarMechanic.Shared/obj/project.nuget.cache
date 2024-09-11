@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3KSpLwIT9KRYJKCIFIgrG2LDmyAcjv2DHe0MC3eoh+I9XE/H8OBc8rw+PmA5+nyudNNxLhyp6gKAHyi39+r3Eg==",
+  "dgSpecHash": "N2zs8Wf4xWGjO7Ld69onoss8Cil2KmFqU9sjRyV1dqgzftq7bnlPexxV/J8jyNJSduGkM4uBHDtQUukl0+AH3g==",
   "success": true,
-  "projectFilePath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.Shared\\CarMechanic.Shared.csproj",
+  "projectFilePath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.Shared\\CarMechanic.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

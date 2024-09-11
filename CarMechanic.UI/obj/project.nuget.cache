@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0oUZq+J1fKBzcF53u8I3wcbf2gpP4SuR8eetOvIn9wuI5KZ6ml5rLFB7EJNm9LyCOceLh69KLrLu4nHNVIRsSg==",
+  "dgSpecHash": "Ji7jZWd30NDSH9sWtN+8pg8lA3iE00cXh+XItDjAlohR24lDNRG82+6cFSJSdd0kdVHKReCh2H4U25OfOSRi4w==",
   "success": true,
-  "projectFilePath": "D:\\develpoment\\c#Beadando\\CarMechanic\\CarMechanic.UI\\CarMechanic.UI.csproj",
+  "projectFilePath": "C:\\Users\\kadar\\Desktop\\CarMechanic\\CarMechanicWebApp\\CarMechanic.UI\\CarMechanic.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kadar\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
     "C:\\Users\\kadar\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.4\\microsoft.aspnetcore.components.8.0.4.nupkg.sha512",
